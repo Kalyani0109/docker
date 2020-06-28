@@ -1,0 +1,32 @@
+<div class="jumbotron">
+    <div class="container">
+        <h1> Create your own Song Collection</h1>
+        <p> Life is a song - sing it. Life is a game - play it.
+            <br> Life is a challenge - meet it. Life is a dream - realize it.
+            <br>Life is a sacrifice - offer it. Life is love - enjoy it.</p>
+        <form>
+            <button class="btn btn-primary btn-lg"> Get Started </button>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1> Add your Favorite Songs</h1>
+            <h3>
+                <p> Words make you think a thought, <br> Makes you feel a feeling,<br> A song makes you feel a thought
+                </p>
+            </h3>
+            <a [routerLink]="[ '/addSongs' ]" role="button" class="btn btn-link btn-lg"> Add a song </a>
+        </div>
+
+        <div class="col-sm-6">
+            <h1>Display Songs</h1>
+            <h3>
+                <p> I create a playlist for each<br> and every character I play </p>
+            </h3>
+            <a [routerLink]="[ '/songList' ]" role="button" class="btn btn-link btn-lg"> View Songs </a>
+        </div>
+
+    </div>
+</div>

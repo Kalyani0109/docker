@@ -1,0 +1,39 @@
+.container{
+    width:600px;
+    margin-top: 100px;
+}
+body{
+    background:grey;
+    /*background-image: url("music2.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+strong{
+    color:grey;
+}
+
+.navbar{
+    color:white;
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+}
+.container-fluid{
+    border:1px solid black;
+    border-radius:rounded corners;
+    border-radius: 50px;
+    background:#8F8F8A;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.form-control{
+    border-radius:rounded corners;
+    border-radius: 50px;
+    width:100%;
+}
+
+.btn{
+    margin:20px;
+}

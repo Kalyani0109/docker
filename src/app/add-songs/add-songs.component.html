@@ -1,0 +1,24 @@
+<div class="container">
+    <form class="form-horizontal" (ngSubmit)="addSongs(song)">
+        <strong>
+            <h1>Please Fill Up The form</h1>
+        </strong>
+        <div class="container-fluid">
+            <br>Song id:
+            <input type="text" class="form-control" id="song_id" name="name" [(ngModel)]="song.musicId" required
+                #song_name="ngModel" [ngModelOptions]="{standalone: true}">
+            <br>Song Title/ name:
+            <input type="text" class="form-control" id="song_name" name="name" [(ngModel)]="song.songName" required
+                #song_name="ngModel" [ngModelOptions]="{standalone: true}">
+            <br> Artist
+            <input type="text" class="form-control" id="artist" name="artist" [(ngModel)]="song.artist" required
+                #artist="ngModel" [ngModelOptions]="{standalone: true}">
+            <br> Description
+            <input type="text" class="form-control" id="description" [(ngModel)]="song.description" required
+                #description="ngModel" [ngModelOptions]="{standalone: true}">
+            <br>
+            <a href="" class="btn btn-info btn-lg" role="button">Cancel</a>
+            <input type="submit" class="btn btn-info btn-lg active" value="Save" style="float:right;">
+        </div>
+    </form>
+</div>

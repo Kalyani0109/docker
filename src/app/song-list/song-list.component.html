@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table tabe-bordered">
+        <tr>
+            <th> Sno</th>
+            <th> Song name </th>
+            <th> Artist</th>
+            <th> Description </th>
+        </tr>
+        <tr *ngFor="let song of songList">
+            <td> {{song.musicId}}</td>
+            <td> {{song.songName}}</td>
+            <td> {{song.artist}}</td>
+            <td> {{song.description}}</td>
+            <td> <a (click)="deleteSong(song.musicId)">
+                    <img src="assets/icons/delete.svg" />
+                </a>
+        </tr>
+    </table>
+</div>
